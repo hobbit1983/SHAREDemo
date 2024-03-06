@@ -7,11 +7,20 @@ galasactl is available on github https://github.com/galasa-dev/cli/ (or within t
 * Linux
 * z/OS
 
+##Initialise Galasa
+```
+galasactl local init
+```
+
 ## Create a project
-`galasactl project create --package sample.project --obr --maven --log -`
+```
+galasactl project create --package sample.project --obr --maven --log -`
+```
 
 ## Run a test
-`galasactl runs submit local --obr mvn:sample.project/sample.project.obr/0.0.1-SNAPSHOT/obr --class sample.project.feature1/sample.project.feature1.TestFeature1 --log -`
+```
+galasactl runs submit local --obr mvn:sample.project/sample.project.obr/0.0.1-SNAPSHOT/obr --class sample.project.feature1/sample.project.feature1.TestFeature1 --log -
+```
 
 # Connect to 3270
 ## pom updates
