@@ -1,4 +1,12 @@
 # Initial Config
+
+## Download galasactl
+galasactl is available on github https://github.com/galasa-dev/cli/releases for the following platforms:
+* MacOS (both Intel and ARM architecture)
+* Windows
+* Linux
+* z/OS
+
 ## Create a project
 `galasactl project create --package sample.project --obr --maven --log -`
 
