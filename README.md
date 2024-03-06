@@ -24,15 +24,18 @@ galasactl runs submit local --obr mvn:sample.project/sample.project.obr/0.0.1-SN
 
 # Connect to 3270
 ## pom updates
+```
 		<dependency>
 			<groupId>dev.galasa</groupId>
 			<artifactId>dev.galasa.zos3270.manager</artifactId>
 			<scope>provided</scope>
 		</dependency>
-
+```
 ## Test Objects
-`@Zos3270Terminal
-	public ITerminal terminal;`
+```
+@Zos3270Terminal
+	public ITerminal terminal;
+```
 
 ## CPS Updates
 ```
