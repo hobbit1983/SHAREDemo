@@ -22,12 +22,14 @@ galasactl is available on github https://github.com/galasa-dev/cli/ (or within t
 		</dependency>
 
 ## Test Objects
-`@Zos3270Terminal(imageTag = "REGION")
+`@Zos3270Terminal
 	public ITerminal terminal;`
 
 ## CPS Updates
 ```
 # Plex2
+zos.dse.tag.PRIMARY.imageid=MV2D
+zos.dse.tag.PRIMARY.clusterid=PLEX2
 zos.cluster.PLEX2.images=MV2D
 
 zos.image.MV2D.default.hostname=winmvs2d.hursley.ibm.com
@@ -35,13 +37,15 @@ zos.image.MV2D.ipv4.hostname=winmvs2d.hursley.ibm.com
 zos.image.MV2D.sysplex=PLEX2
 zos.image.MV2D.telnet.port=23
 zos.image.MV2D.telnet.tls=false
-
-cicsts.provision.type=DSE
-cicsts.dse.tag.REGION.applid=IYK2ZNB5
-cicsts.dse.tag.REGION.imageid=MV2D
-cicsts.default.logon.initial.text=HIT ENTER FOR LATEST STATUS
-cicsts.default.logon.gm.text=******\\(R)
 ```
+
+## Credentials
+In credentials.properties add:
+```
+secure.credentials.ZOS.username=YATESW
+secure.credentials.ZOS.password=VF89qqckT439hHy
+```
+
 ## Test code
 ```
 @Test
