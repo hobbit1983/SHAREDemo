@@ -55,7 +55,7 @@ zos.image.MV2D.telnet.tls=false
 In credentials.properties add:
 ```
 secure.credentials.ZOS.username=YATESW
-secure.credentials.ZOS.password=VF89qqckT439hHy
+secure.credentials.ZOS.password=<<password>>
 ```
 
 ## Test code
