@@ -17,6 +17,12 @@ galasactl local init --log -
 galasactl project create --package sample.project --obr --maven --log -
 ```
 
+## Build the test project
+Change into the test project directory (/sample.project.feature1) then issue
+```
+mvn clean install
+```
+
 ## Run a test
 ```
 galasactl runs submit local --obr mvn:sample.project/sample.project.obr/0.0.1-SNAPSHOT/obr --class sample.project.feature1/sample.project.feature1.TestFeature1 --log -
