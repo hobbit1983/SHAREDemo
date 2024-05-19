@@ -14,7 +14,7 @@ galasactl local init
 
 ## Create a project
 ```
-galasactl project create --package sample.project --obr --maven --log -`
+galasactl project create --package sample.project --obr --maven --log -
 ```
 
 ## Run a test
