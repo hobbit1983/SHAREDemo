@@ -9,7 +9,7 @@ galasactl is available on github https://github.com/galasa-dev/cli/ (or within t
 
 ##Initialise Galasa
 ```
-galasactl local init
+galasactl local init --log -
 ```
 
 ## Create a project
